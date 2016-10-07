@@ -29,7 +29,7 @@
   			
 	},
 		populateRepositoryTab = function(repoName, tabId) {
-			$.get("http://api.github.com/users/"+ repoName + "/repos", 
+			$.get("//api.github.com/users/"+ repoName + "/repos", 
 				{"access_token" : "c1ed8f00d37bcd5b91fb80b07dc149b10f5f7e35"}, 
 				function(repos) {
 		    	repos.sort(function(repo1, repo2) {
