@@ -6,10 +6,11 @@
   		card.find(".card-title").text(repo.name);
   		card.find(".repo_link").attr("href", repo.html_url);
   		card.find(".project-description").text(repo.description || " ");
-  		card.find(".language").text(repo.language);
+  		// card.find(".language").text(repo.language);
   		card.find(".star_count").text(repo.stargazers_count);
   		card.find(".watchers_count").text(repo.watchers_count)
   		addContributors(repo, card);
+      addLanguageSvg(repo.language, card);
   		card.removeClass("hide repoCard");
   		return card;
   	},
@@ -38,7 +39,25 @@
 		    		$("#" + tabId + " .repositories"+ index % 3).append(createRepoCard(repo));
 		    	});
 		    });
-	};
+	},
+    addLanguageSvg = function(repoLanguage, card) {
+      repoLanguage = repoLanguage ? repoLanguage.toLowerCase(): "";
+      $.ajax({ 
+        url: "https://wrapapi.com/use/saym/devicon/svg/latest?wrapAPIKey=KeAIaBXYj5SfQZvZ0rzHd7vgCzVyZvI3&name="+repoLanguage,
+        method: "GET",
+        dataType: "json",
+        headers: {
+          "Access-Control-Allow-Origin": "*",
+          "Access-Control-Allow-Headers": "*"
+        },
+        success: function(data) {
+            card.find(".card-content").append($("<div></div>")
+              .addClass("left-align")
+              .append(data.data.svg)
+            );
+          }
+      });
+  };
 
 	$("#copyright").text(new Date().getFullYear());
     $('.button-collapse').sideNav();
