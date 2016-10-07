@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0"/>
+  <title>Criteo | Github</title>
+
+  <!-- CSS  -->
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link href="css/materialize.min.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+  <link href="css/style.css" type="text/css" rel="stylesheet" media="screen,projection"/>
+</head>
+<body>
+  <nav class="grey lighten-5" role="navigation">
+    <div class="nav-wrapper container"><img id="logo-container" href="#" class="brand-logo" src="http://www.criteo.com/images/criteo-logo.svg" height="60"></img>
+      <ul class="right hide-on-med-and-down">
+        <li><a class="grey-text" href="http://www.criteo.com/">Criteo.com</a></li>
+      </ul>
+
+      <ul id="nav-mobile" class="side-nav">
+        <li><a href="http://www.criteo.com/">Criteo.com</a></li>
+      </ul>
+      <a href="#" data-activates="nav-mobile" class="button-collapse"><i class="material-icons">menu</i></a>
+    </div>
+  </nav>
+  <div class="section no-pad-bot" id="index-banner">
+    <div class="container">
+      <br><br>
+      <h1 class="header center orange-text">Open Source @ Criteo</h1>
+      <div class="row center">
+        <h5 class="header col s12 light">Criteo is committed to contributing to the open source community.</h5>
+        <p>We use ample open-source software internally (Hadoop, RabbitMQ, Graphite, Couchbase, Cassandra, git, gitlab, GNU/Linux, HAProxy, just to name a few). We also contribute to open software we use with bug fixes and improvements. Additionally, we publish tools of our own.</p>
+        <p>Here are our Github repositories: One for all Criteo maintained open source projects, and another for all Criteo maintained <a class="grey-text darken-2" href="https://www.chef.io/chef/">Chef</a> cookbooks</p>
+      </div>
+      <div class="row center">
+      </div>
+      <br><br>
+
+    </div>
+  </div>
+
+
+
+  <div class="container">
+    <div class="row">
+      <div class="col s12">
+        <ul class="tabs">
+          <li class="tab col s3">
+            <a class="waves-effect waves-orange active orange-text" href="#user_criteo">Criteo</a>
+          </li>
+          <!-- <li class="tab col s3">
+            <a class="waves-effect waves-orange orange-text" href="#user_criteo_forks">Criteo Forks</a>
+          </li> -->
+          <li class="tab col s3">
+            <a class="waves-effect waves-orange orange-text" href="#user_criteo_cookbooks">Criteo Cookbooks</a>
+          </li>
+        </ul>
+      </div>
+      <div id="user_criteo" class="row">
+        <div class="repositories0 col s12 m4"></div>
+        <div class="repositories1 col s12 m4"></div>
+        <div class="repositories2 col s12 m4"></div>
+      </div>
+      <div id="user_criteo_forks" class="row">
+        <div class="repositories0 col s12 m4"></div>
+        <div class="repositories1 col s12 m4"></div>
+        <div class="repositories2 col s12 m4"></div>
+      </div>
+      <div id="user_criteo_cookbooks" class="row">
+        <div class="repositories0 col s12 m4"></div>
+        <div class="repositories1 col s12 m4"></div>
+        <div class="repositories2 col s12 m4"></div>
+      </div>
+  </div>
+</div>
+
+  <footer class="page-footer orange">
+    <div class="container">
+      <div class="row">
+        <div class="col l6 s12">
+          <h5 class="white-text">Company Bio</h5>
+          <p class="grey-text text-lighten-4">Every day is different and we’re proud to make host a culture that always challenges your skills. We are building the development teams of the future spanning across 27 countries.
+          </p><p class="grey-text text-lighten-4">
+          We're happily home to Europe’s biggest Hadoop cluster,
+          the largest public machine learning dataset (1TB+),
+          15,000 servers, &amp; 7+ datacenters</p>
+        </div>
+        <div class="col l3 s12">
+          <h5 class="white-text">Connect</h5>
+          <ul>
+            <li><a class="white-text" href="http://www.criteo.com/about-us/" title="About">About</a></li>
+            <li><a class="white-text" href="http://www.criteo.com/careers/" title="Careers">Careers</a></li>
+            <li><a class="white-text" href="http://www.criteo.com/contact-us/find-us/" title="Find Us">Find Us</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div class="footer-copyright">
+      <div class="container">
+      Copyright © Criteo <span id="copyright"></span>
+      </div>
+    </div>
+  </footer>
+
+
+  <!--  Scripts-->
+  <script src="js/jquery-3.1.1.min.js"></script>
+  <script src="js/materialize.min.js"></script>
+  <script src="js/init.js"></script>
+
+
+  <div class="repoCard hide">
+    <div class="card grey lighten-1 hoverable">
+      <a class="repo_link" href="#">
+        <div class="card-content">
+          <span class="card-title white-text">Project Title</span>
+          <p class="project-description white-text">Project Description</p>
+        </div>
+      </a>
+      <div class="card-action white-text center-align">
+        <span class="language">Language</span>
+        <div class="row">
+          <div class="stars col s6 m6 center-align">
+            <i class="small material-icons">star</i>
+            <span class="star_count"></span>
+          </div>
+          <div class="watchers col s6 m6 center-align">
+            <i class="small material-icons">visibility</i>
+            <span class="watchers_count"></span>
+          </div>
+        </div>
+        <div class="contributors row">
+        </div>
+      </div>
+    </div>
+  </div>
+  </body>
+</html>
