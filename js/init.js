@@ -13,7 +13,7 @@
   		return card;
   },
     addContributors = function(repo, card) {
-      $.get(repo.contributors_url, {"access_token" : "c1ed8f00d37bcd5b91fb80b07dc149b10f5f7e35"}, function(people) {
+      $.get(repo.contributors_url, function(people) {
         people = people || [];
         people.sort(function(a,b) {return b.concontributions - a.concontributions;})
           .forEach(function(person,index){
