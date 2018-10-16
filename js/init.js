@@ -28,7 +28,7 @@
 	},
 		populateRepositoryTab = function(repoName, tabId) {
 			$.get("//api.github.com/users/"+ repoName + "/repos", 
-				{"access_token" : "c1ed8f00d37bcd5b91fb80b07dc149b10f5f7e35"}, 
+				{"access_token" : "c1ed8f00d37bcd5b91fb80b07dc149b10f5f7e35"}, // NOTE: this token is not valid. No need to report this for our bug bounty program.
 				function(repos) {
 		    	repos.sort(function(repo1, repo2) {
 		    		return repo2.stargazers_count - repo1.stargazers_count;
