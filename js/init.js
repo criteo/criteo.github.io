@@ -48,5 +48,6 @@
   populateRepositoryTab("criteo", "user_criteo");
   //populateRepositoryTab("criteo-forks", "user_criteo_forks");
   populateRepositoryTab("criteo-cookbooks", "user_criteo_cookbooks");
+	  populateRepositoryTab("criteo-research", "user_criteo_research");
   }); // end of document ready
 })(jQuery); // end of jQuery name space
